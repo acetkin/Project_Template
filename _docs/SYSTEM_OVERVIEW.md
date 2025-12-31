@@ -63,6 +63,13 @@ _docs
     Handoff_Protocol.md
     Decision_and_Change_Log.md
 ```
+## Context and Decision Coupling Rule
+- Context_Packet.md contains the current working mental model of the project.
+- Decision_and_Change_Log.md records irreversible or direction-changing decisions.
+Rules:
+- Any decision that changes direction, scope, constraints, or assumptions MUST be logged in Decision_and_Change_Log.md.
+- Context_Packet.md MUST be updated to reflect the latest approved decisions.
+- A decision does not exist unless it is logged.
 
 ## Documenting Rules (3×3 Constraint)
 For all project documents under `/_docs/A_Overview/`:
@@ -101,3 +108,34 @@ When proposing documentation changes, always provide:
 - Rationale
 - Requires approval: YES
 
+## Change Type Matrix
+
+All changes fall into one of the following categories:
+1. Documentation Content Change
+   - Affects: Any file under /_docs
+   - Action: Doc Update Proposal REQUIRED
+   - Human Approval: REQUIRED
+2. Structural Change
+   - Affects: Folder structure, file names, document hierarchy
+   - Action: Explicit Proposal + Rationale
+   - Human Approval: REQUIRED (before any action)
+3. Stage Change
+   - Affects: Development_Stages.md, Stage_Change_Logs.md
+   - Action: Stage Change Proposal
+   - Human Approval: REQUIRED
+4. Task Change
+   - Affects: Task_Backlog.md, Task_Board.md
+   - Action: Direct edit allowed ONLY after user confirmation
+   - Human Approval: REQUIRED
+No other change types are permitted.
+
+## Proposal Lifecycle
+All documentation changes follow this lifecycle:
+1. Propose
+   - LLM presents a Doc Update Proposal.
+   - No file is modified.
+2. Freeze
+   - LLM halts all related actions.
+   - Waits for explicit human approval.
+3. Apply
+   - Only after approval, the LLM applies the change in VS Code.
