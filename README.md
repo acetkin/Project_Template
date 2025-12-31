@@ -1,16 +1,40 @@
 # Project Template
 
-This repository is a template for starting projects using a spec-driven, LLM-assisted workflow.
+This repository is a system template for running projects using a strict, documentation-driven workflow with LLM assistance.
 
-## What this repository contains
-- `_docs/SYSTEM_OVERVIEW.md`: The system rules that define how projects are bootstrapped and maintained.
-- No project-specific documentation is stored here.
+This is NOT a project repository.
+No project-specific content lives here.
 
-## How to use
-1. Click **Use this template** on GitHub.
-2. Open the new repository in VS Code.
-3. Follow the instructions defined in `_docs/SYSTEM_OVERVIEW.md`.
+## Purpose
+This template provides a complete operating system for starting and running projects with:
+- Explicit human approval
+- Deterministic documentation structure
+- Controlled LLM behavior
+- Clear separation between rules, state, and content
 
-## Important
-- All project documentation is generated and maintained inside VS Code with explicit human approval.
-- Conversations may happen in any language, but repository files must be in English.
+## What This Repository Contains
+- A complete documentation structure under /_docs
+- System-level rules and directives for LLM operation
+- Empty but structured skeleton files for project execution
+
+## What This Repository Does NOT Contain
+- No project ideas
+- No project requirements
+- No implementation code
+- No business or domain-specific content
+
+## How It Is Used
+1. Create a new repository using this template.
+2. Open the repository in VS Code.
+3. Provide an initial project prompt to the LLM.
+4. The LLM follows the rules defined in /_docs to propose and document the project.
+5. All documentation changes require explicit human approval.
+
+## Core Principles
+- SYSTEM_OVERVIEW.md is the single source of truth.
+- Documentation changes follow a strict proposal lifecycle.
+- Context, decisions, stages, and tasks are strictly separated.
+- LLMs may assist but never act autonomously.
+
+## Status
+SYSTEM v1.0 – Stable
