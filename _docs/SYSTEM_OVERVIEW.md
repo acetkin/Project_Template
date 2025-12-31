@@ -94,6 +94,32 @@ For all project documents under `/_docs/A_Overview/`:
 - `Task_Board.md`: task status tracking.
 - `Release_Checklist.md`: final checklist for stage or release completion.
 
+## Document Behavior Classification
+All project documents fall into one of the following behavior categories:
+
+- Directive Documents
+  - Define rules and must remain stable.
+  - Changes are rare and require explicit justification.
+  - Located under /_docs/SYSTEM_OVERVIEW.md and /_docs/B_Operation/A_Instructions/.
+
+- State Documents
+  - Represent the current operational or mental state.
+  - Must always reflect the latest approved state.
+  - Overwritten on update.
+  - Examples: Context_Packet.md, Handoff_Protocol.md.
+
+- Log Documents
+  - Record historical, irreversible events.
+  - Append-only.
+  - Entries must never be edited or removed.
+  - Examples: Decision_and_Change_Log.md, Stage_Change_Logs.md.
+
+- Operational Documents
+  - Track progress, tasks, and checklists.
+  - May grow over time but follow strict formats.
+  - Examples: Task_Backlog.md, Task_Board.md, Release_Checklist.md.
+
+
 ## Bootstrapping Procedure (VS Code LLM)
 When starting a new project:
 1. Read this SYSTEM_OVERVIEW.md.
