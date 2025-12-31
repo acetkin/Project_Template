@@ -9,7 +9,7 @@ This repository is a template for starting projects using a spec-driven, LLM-ass
 ## How to use
 1. Click **Use this template** on GitHub.
 2. Open the new repository in VS Code.
-3. Follow the instructions defined in `docs/SYSTEM_OVERVIEW.md`.
+3. Follow the instructions defined in `_docs/SYSTEM_OVERVIEW.md`.
 
 ## Important
 - All project documentation is generated and maintained inside VS Code with explicit human approval.
