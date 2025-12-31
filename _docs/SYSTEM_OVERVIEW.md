@@ -70,6 +70,9 @@ Rules:
 - Any decision that changes direction, scope, constraints, or assumptions MUST be logged in Decision_and_Change_Log.md.
 - Context_Packet.md MUST be updated to reflect the latest approved decisions.
 - A decision does not exist unless it is logged.
+- Order of Operations:
+1. Log the decision in Decision_and_Change_Log.md.
+2. Update Context_Packet.md to reflect the approved decision.
 
 ## Documenting Rules (3×3 Constraint)
 For all project documents under `/_docs/A_Overview/`:
