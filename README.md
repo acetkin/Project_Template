@@ -3,7 +3,7 @@
 This repository is a template for starting projects using a spec-driven, LLM-assisted workflow.
 
 ## What this repository contains
-- `docs/SYSTEM_OVERVIEW.md`: The system rules that define how projects are bootstrapped and maintained.
+- `_docs/SYSTEM_OVERVIEW.md`: The system rules that define how projects are bootstrapped and maintained.
 - No project-specific documentation is stored here.
 
 ## How to use
