@@ -100,7 +100,7 @@ All project documents fall into one of the following behavior categories:
 - Directive Documents
   - Define rules and must remain stable.
   - Changes are rare and require explicit justification.
-  - Located under /_docs/SYSTEM_OVERVIEW.md and /_docs/B_Operation/A_Instructions/.
+  - Include SYSTEM_OVERVIEW.md and all files under /_docs/B_Operation/A_Instructions/.
   - Examples: Handoff_Protocol.md.
 
 - State Documents
@@ -155,7 +155,7 @@ All changes fall into one of the following categories:
    - Human Approval: REQUIRED
 4. Task Change
    - Affects: Task_Backlog.md, Task_Board.md
-   - Action: Direct edit allowed ONLY after user confirmation
+   - Action: Edit allowed ONLY after explicit user confirmation
    - Human Approval: REQUIRED
 No other change types are permitted.
 
