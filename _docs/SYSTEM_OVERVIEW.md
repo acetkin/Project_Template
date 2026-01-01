@@ -101,12 +101,13 @@ All project documents fall into one of the following behavior categories:
   - Define rules and must remain stable.
   - Changes are rare and require explicit justification.
   - Located under /_docs/SYSTEM_OVERVIEW.md and /_docs/B_Operation/A_Instructions/.
+  - Examples: Handoff_Protocol.md.
 
 - State Documents
   - Represent the current operational or mental state.
   - Must always reflect the latest approved state.
   - Overwritten on update.
-  - Examples: Context_Packet.md, Handoff_Protocol.md.
+  - Examples: Context_Packet.md.
 
 - Log Documents
   - Record historical, irreversible events.
