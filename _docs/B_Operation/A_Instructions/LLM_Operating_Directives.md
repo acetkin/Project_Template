@@ -2,6 +2,14 @@
 This document defines mandatory behavioral rules for any LLM operating inside this repository.
 These rules are non-negotiable and derived from SYSTEM_OVERVIEW.md.
 
+## Bootstrap Exception (Critical)
+If any file in the Mandatory Read Order is missing (common in a new repo):
+1) Treat this as a Structural Change.
+2) Prepare Doc Update Proposals to create the missing folders/files (minimum: placeholders).
+3) Freeze and request explicit human approval.
+4) After approval and creation, restart the Mandatory Read Order from step 1.
+Do NOT request “clarification” for missing bootstrap files; request approval to create them.
+
 ## Mandatory Read Order
 Before taking any action, the LLM MUST read the following files in order:
 1. SYSTEM_OVERVIEW.md
