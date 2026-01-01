@@ -156,6 +156,7 @@ All changes fall into one of the following categories:
    - Affects: Task_Backlog.md, Task_Board.md
    - Action: Edit allowed ONLY after explicit user confirmation
    - Human Approval: REQUIRED
+
 No other change types are permitted.
 
 ## Proposal Lifecycle
