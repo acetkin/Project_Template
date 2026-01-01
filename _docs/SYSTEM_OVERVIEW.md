@@ -122,11 +122,28 @@ All project documents fall into one of the following behavior categories:
 
 ## Bootstrapping Procedure (VS Code LLM)
 When starting a new project:
-1. Read this SYSTEM_OVERVIEW.md.
-2. Create the complete `/_docs` structure defined above.
-3. Draft initial content using the user-provided Initial Prompt.
-4. For EACH file, stop and request explicit approval before writing.
-5. Never commit or push unless explicitly requested by the user.
+### First 10 Minutes (Kickoff)
+Purpose: collect only the minimum inputs, then produce Doc Update Proposals (**NO edits**).
+
+1) Read this `SYSTEM_OVERVIEW.md` and Create the complete /_docs structure defined above.
+2) Ask the user the **Kickoff Questions** below (in order). Do not propose any doc edits until the answers are collected.
+3) After answers, produce **Doc Update Proposals ONLY** for the baseline files:
+   - `/_docs/C_Communication/Decision_and_Change_Log.md`  (Decision #0001)
+   - `/_docs/C_Communication/Context_Packet.md`           (reflect Decision #0001)
+   - `/_docs/A_Overview/Project_Overview.md`              (strict 3×3: A Design / B Development / C Marketing)
+   - `/_docs/B_Operation/C_Tasks/Task_Backlog.md`
+   - `/_docs/B_Operation/C_Tasks/Task_Board.md`
+4) Enforce coupling: `Decision_and_Change_Log.md` proposal first, then `Context_Packet.md`.
+5) Stop and wait for explicit human approval before writing any file.
+
+### Kickoff Questions (asked by the VS Code LLM)
+1) Project name + short slug (repo-friendly)?
+2) One-liner: “This project helps X do Y by Z.”
+3) Goals (**exactly 3 bullets**)?
+4) Non-goals (**exactly 3 bullets**)?
+5) Hard constraints (platforms, deadlines, offline/online, must-use tech, etc.)?
+6) Decision #0001 (the first concrete decision we will log)?
+7) Seed tasks (5–10 items) to initialize backlog/board?
 
 ## Doc Update Proposal Format
 When proposing documentation changes, always provide:
