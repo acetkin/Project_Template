@@ -121,12 +121,33 @@ All project documents fall into one of the following behavior categories:
 
 
 ## Bootstrapping Procedure (VS Code LLM)
+
 When starting a new project:
-1. Read this SYSTEM_OVERVIEW.md.
-2. Create the complete `/_docs` structure defined above.
-3. Draft initial content using the user-provided Initial Prompt.
-4. For EACH file, stop and request explicit approval before writing.
-5. Never commit or push unless explicitly requested by the user.
+
+1) Read this `SYSTEM_OVERVIEW.md` and treat it as the **single source of truth**.
+
+2) Check whether the required `/_docs` structure and the **Mandatory Read Order** files exist.
+   - If anything is missing, treat this as a **Structural Change**.
+   - Produce **Doc Update Proposals** to create the missing folders/files (at minimum as placeholders).
+   - **STOP and request explicit human approval** before creating any folders/files.
+
+3) After the required structure/files exist (or have been created with approval), re-run the **Mandatory Read Order** and proceed with documentation work.
+
+4) Use the user-provided **Initial Prompt** as the project brief.
+   - Produce **Doc Update Proposals** (ONLY proposals; no edits) to draft initial documentation content.
+   - For EACH file, **STOP and request explicit human approval** before writing or editing that file.
+
+5) Enforce coupling:
+   - Any scope/direction/constraint change must be proposed in `Decision_and_Change_Log.md` **first**,
+   - then reflected in `Context_Packet.md`.
+
+6) After documentation is approved and written:
+   - propose development stages (if needed),
+   - then propose tasks (backlog + board),
+   - then proceed to code tasks **only after approvals**.
+
+7) Never commit, push, rename, or delete files unless explicitly requested by the user.
+
 
 ## Doc Update Proposal Format
 When proposing documentation changes, always provide:
