@@ -101,7 +101,6 @@ All project documents fall into one of the following behavior categories:
   - Define rules and must remain stable.
   - Changes are rare and require explicit justification.
   - Include SYSTEM_OVERVIEW.md and all files under /_docs/B_Operation/A_Instructions/.
-  - Examples: Handoff_Protocol.md.
 
 - State Documents
   - Represent the current operational or mental state.
